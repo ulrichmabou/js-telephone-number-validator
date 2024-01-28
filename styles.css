@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --ship-gray: #424144;
+  --scorpion: #6c6a6b;
+  --shady-lady: #a7a5a6;
+  --alto: #d9d8d8;
+  --alabaster: #d9d8d8;
+}
+
+body {
+  background-color: var(--ship-gray);
+  color: var(--alabaster);
+  text-align: center;
+  justify-content: center;
+}
+
+h1 {
+  width: 100%;
+  max-width: 480px;
+  margin: 15px 0;
+  text-align:center;
+}
+
+.outer-container {
+  background-color: black;
+  position: relative;
+  width: 250px;
+  height: 460px;
+  margin: 30px auto;
+  border-radius: 15px;
+  border: 15px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-container {
+  background-color: var(--alto);
+  color: var(--ship-gray);
+  position: relative;
+  width: 210px;
+  height: 440px;
+  border-radius: 2px;
+}
+.inner-container p {
+  margin: 10px auto 5px;
+}
+
+#user-input {
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid var(--ship-gray);
+  border-radius: 10px;
+  text-align: center;
+  width: 90%;
+  height: 42px;
+  font-size: 16px;
+}
+
+.buttons-div {
+  width: 100%;
+  height: 40px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  cursor: pointer;
+  width: 100px;
+  margin: 10px;
+  font-size: 12px;
+  background-color: var(--alabaster);
+  background-image: linear-gradient(var(--alabaster), var(--scorpion));
+  border-color: var(--alabaster);
+  border-width: 3px;
+}
